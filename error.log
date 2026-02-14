@@ -1,0 +1,1376 @@
+2025-04-30 02:40:29,993 - INFO - logging in using static token
+2025-04-30 02:40:31,699 - INFO - Shard ID None has connected to Gateway (Session ID: 69dfe27192294c8677de7f4d6aaff8bc).
+2025-04-30 13:26:07,890 - INFO - logging in using static token
+2025-04-30 13:26:09,484 - INFO - Shard ID None has connected to Gateway (Session ID: aa7d45343ebed629db498d154f398f0d).
+2025-04-30 23:02:13,393 - INFO - logging in using static token
+2025-04-30 23:02:15,083 - INFO - Shard ID None has connected to Gateway (Session ID: 999daf7ab1f784326f014bfe66362be9).
+2025-05-02 22:31:30,975 - INFO - logging in using static token
+2025-05-02 22:31:32,789 - INFO - Shard ID None has connected to Gateway (Session ID: 5bec398fbebbef16197ab9e065de9f1d).
+2025-05-02 22:41:19,737 - INFO - logging in using static token
+2025-05-02 22:41:20,753 - INFO - Shard ID None has connected to Gateway (Session ID: 5e7921804e236b5a837b06e09b5ffd98).
+2025-05-03 13:49:12,565 - INFO - logging in using static token
+2025-05-03 13:49:14,903 - INFO - Shard ID None has connected to Gateway (Session ID: 13f0cee04fdd9aafe5604f88ceb75ac4).
+2025-05-09 12:56:31,171 - INFO - logging in using static token
+2025-05-09 12:56:32,405 - INFO - Shard ID None has connected to Gateway (Session ID: e56a67befad2595d2eff0271493d8e99).
+2025-05-09 13:24:59,302 - INFO - logging in using static token
+2025-05-09 13:25:00,638 - INFO - Shard ID None has connected to Gateway (Session ID: 19f2855cbf892e5353beaefb5458e596).
+2025-05-11 17:16:37,289 - INFO - logging in using static token
+2025-05-11 17:16:38,757 - INFO - Shard ID None has connected to Gateway (Session ID: d61e7b9e8a1c12e99d277877fa938edc).
+2025-07-10 16:04:24,180 - INFO - logging in using static token
+2025-07-10 16:04:25,458 - INFO - Shard ID None has connected to Gateway (Session ID: 7f0a787bfa7781a6db5936419cf0cf5e).
+2025-07-10 17:17:01,396 - INFO - Shard ID None has successfully RESUMED session 7f0a787bfa7781a6db5936419cf0cf5e.
+2025-07-30 02:32:05,526 - INFO - logging in using static token
+2025-07-30 02:32:07,155 - INFO - Shard ID None has connected to Gateway (Session ID: fc6c17cf666a3728626712e2b0e0ffcd).
+2025-10-20 19:54:11,413 - INFO - logging in using static token
+2025-10-20 19:54:12,621 - INFO - Shard ID None has connected to Gateway (Session ID: 1d33fd5fb79373d94c4608ffcf939010).
+2025-10-20 19:56:33,236 - INFO - logging in using static token
+2025-10-20 19:56:34,413 - INFO - Shard ID None has connected to Gateway (Session ID: 347d7dc48307c4c15b688a91ae071e32).
+2025-10-21 13:45:59,322 - INFO - logging in using static token
+2025-10-21 13:46:00,545 - INFO - Shard ID None has connected to Gateway (Session ID: f570866d01c0370097665c8d5f21ad95).
+2025-10-21 13:50:44,814 - INFO - logging in using static token
+2025-10-21 13:50:46,169 - INFO - Shard ID None has connected to Gateway (Session ID: 0f332c2af4cd02ab7027c8fdd9c69afc).
+2025-10-21 13:51:09,502 - INFO - logging in using static token
+2025-10-21 13:51:10,860 - INFO - Shard ID None has connected to Gateway (Session ID: 2e2743fcf1b5034053dca098130ee93c).
+2025-10-21 13:55:24,358 - INFO - logging in using static token
+2025-10-21 13:55:25,451 - INFO - Shard ID None has connected to Gateway (Session ID: c15de05125e4046eb591f957b3a57e2f).
+2025-10-21 13:55:40,514 - ERROR - Ignoring exception in command 'rpg'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 291, in rpg
+    await interaction.edit_original_response(view=None) # ✅ CORRETO!
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 557, in edit_original_response
+    data = await adapter.edit_original_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10015): Unknown Webhook
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'rpg' raised an exception: NotFound: 404 Not Found (error code: 10015): Unknown Webhook
+2025-10-21 13:58:05,508 - INFO - logging in using static token
+2025-10-21 13:58:06,880 - INFO - Shard ID None has connected to Gateway (Session ID: 83aa479976943929b4a128a54fc2d363).
+2025-10-21 14:01:55,567 - INFO - logging in using static token
+2025-10-21 14:01:56,666 - INFO - Shard ID None has connected to Gateway (Session ID: 9dc5725dc61b6a5e1348113e7cc8b1d1).
+2025-10-21 14:02:42,081 - ERROR - Ignoring exception in view <ContinueButtons timeout=120 children=2> for item <Button style=<ButtonStyle.primary: 1> url=None disabled=False label='⚔️ Continuar (Escolher Classe)' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 357, in start
+    await historia(interaction)
+          ~~~~~~~~^^^^^^^^^^^^^
+TypeError: 'Command' object is not callable
+2025-10-21 14:09:32,169 - INFO - logging in using static token
+2025-10-21 14:09:33,466 - INFO - Shard ID None has connected to Gateway (Session ID: a2dedb11901a5c3a4fcac162f0b0c8f0).
+2025-10-21 14:10:21,881 - INFO - logging in using static token
+2025-10-21 14:10:23,010 - INFO - Shard ID None has connected to Gateway (Session ID: ada4f1e99450676cf53ea71afebdd11a).
+2025-10-21 14:10:46,473 - ERROR - Ignoring exception in view <ClassButtons timeout=120 children=4> for item <Button style=<ButtonStyle.primary: 1> url=None disabled=False label='Mecânico' emoji=<PartialEmoji animated=False name='⚙️' id=None> row=None sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 160, in choose_class
+    await self.start_adventure(chosen_class, player_stats, interaction)
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 190, in start_adventure
+    action_buttons = ActionButtons(interaction, inimigo, player_stats)
+TypeError: View.__init__() takes 1 positional argument but 4 were given
+2025-10-21 14:13:52,691 - INFO - logging in using static token
+2025-10-21 14:13:53,795 - INFO - Shard ID None has connected to Gateway (Session ID: 9b8a53a668797ce26ab7b5c137c4ed73).
+2025-10-21 14:21:28,844 - INFO - logging in using static token
+2025-10-21 14:21:31,112 - INFO - Shard ID None has connected to Gateway (Session ID: 8aa79ba8a9eea9abafa9629d01783ef7).
+2025-10-21 14:38:31,769 - INFO - logging in using static token
+2025-10-21 14:38:33,030 - INFO - Shard ID None has connected to Gateway (Session ID: fea55b6dc2a8cd7b2b904f2e6637fa2b).
+2025-10-21 14:38:44,012 - ERROR - Ignoring exception in command 'rpg_ia'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 651, in rpg_ia
+    tema = ThemeGenerator().generate()
+           ^^^^^^^^^^^^^^
+NameError: name 'ThemeGenerator' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'rpg_ia' raised an exception: NameError: name 'ThemeGenerator' is not defined
+2025-10-21 14:45:38,542 - INFO - logging in using static token
+2025-10-21 14:45:39,606 - INFO - Shard ID None has connected to Gateway (Session ID: 6744f0f715899aa700347417cfc90b93).
+2025-10-21 14:45:47,098 - ERROR - Ignoring exception in command 'rpg_ia'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 654, in rpg_ia
+    tema = ThemeGenerator().generate()
+           ^^^^^^^^^^^^^^
+NameError: name 'ThemeGenerator' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'rpg_ia' raised an exception: NameError: name 'ThemeGenerator' is not defined
+2025-10-21 14:49:32,650 - INFO - logging in using static token
+2025-10-21 14:49:34,091 - INFO - Shard ID None has connected to Gateway (Session ID: 610520dd18732382e93a0894803dcdd7).
+2025-10-21 14:49:52,523 - ERROR - Ignoring exception in command 'rpg'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 787, in rpg_command
+    if user_id in PLAYER_SESSIONS:
+                  ^^^^^^^^^^^^^^^
+NameError: name 'PLAYER_SESSIONS' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'rpg' raised an exception: NameError: name 'PLAYER_SESSIONS' is not defined
+2025-10-21 15:05:38,039 - INFO - logging in using static token
+2025-10-21 15:05:39,402 - INFO - Shard ID None has connected to Gateway (Session ID: 29fe16f97de3b44f5f5d0dd08cfc94e2).
+2025-10-21 15:12:14,269 - INFO - logging in using static token
+2025-10-21 15:12:15,390 - INFO - Shard ID None has connected to Gateway (Session ID: 8ae33b414be549da670ab47bc944c5c5).
+2025-10-21 15:18:53,355 - INFO - logging in using static token
+2025-10-21 15:18:54,439 - INFO - Shard ID None has connected to Gateway (Session ID: a7ddccf2eb242e669a9c083fe13ee18a).
+2025-10-21 15:20:13,582 - ERROR - Ignoring exception in view <GameMenuView timeout=3600 children=3> for item <Button style=<ButtonStyle.danger: 4> url=None disabled=False label='⚔️ Aventura (Combate/Evento)' emoji=None row=0 sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 437, in start_new_adventure
+    await start_adventure(interaction, self.player)
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 329, in start_adventure
+    await interaction.response.send_modal(EnigmaView(player, evento))
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1212, in send_modal
+    raise InteractionResponded(self._parent)
+discord.errors.InteractionResponded: This interaction has already been responded to before
+2025-10-21 16:00:58,225 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 16:00:58,228 - INFO - logging in using static token
+2025-10-21 16:00:59,514 - INFO - Shard ID None has connected to Gateway (Session ID: 2575514e8b1edb2db266d900b710b282).
+2025-10-21 16:02:28,884 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108824802782892113 responded with 429. Retrying in 0.38 seconds.
+2025-10-21 16:02:29,935 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108824802279563265 responded with 429. Retrying in 0.34 seconds.
+2025-10-21 16:02:30,707 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108824802204069888 responded with 429. Retrying in 0.56 seconds.
+2025-10-21 16:02:31,800 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108824771824717854 responded with 429. Retrying in 0.46 seconds.
+2025-10-21 16:02:32,734 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108824771031994468 responded with 429. Retrying in 0.53 seconds.
+2025-10-21 16:02:33,835 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108824719513358387 responded with 429. Retrying in 0.43 seconds.
+2025-10-21 16:02:34,683 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108824719018430524 responded with 429. Retrying in 0.58 seconds.
+2025-10-21 16:02:35,719 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108823116106440754 responded with 429. Retrying in 0.55 seconds.
+2025-10-21 16:02:36,857 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108823115288563753 responded with 429. Retrying in 0.42 seconds.
+2025-10-21 16:02:37,746 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822982136176760 responded with 429. Retrying in 0.52 seconds.
+2025-10-21 16:02:38,682 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822981360238622 responded with 429. Retrying in 0.58 seconds.
+2025-10-21 16:02:39,769 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822891820240999 responded with 429. Retrying in 0.49 seconds.
+2025-10-21 16:02:40,664 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822890650030151 responded with 429. Retrying in 0.60 seconds.
+2025-10-21 16:02:41,892 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822754414825606 responded with 429. Retrying in 0.37 seconds.
+2025-10-21 16:02:42,675 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822753508855909 responded with 429. Retrying in 0.59 seconds.
+2025-10-21 16:02:43,919 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822689277292755 responded with 429. Retrying in 0.35 seconds.
+2025-10-21 16:02:44,698 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822688883023952 responded with 429. Retrying in 0.57 seconds.
+2025-10-21 16:02:45,703 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822589939404951 responded with 429. Retrying in 0.58 seconds.
+2025-10-21 16:02:46,705 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822589113127034 responded with 429. Retrying in 0.56 seconds.
+2025-10-21 16:02:47,663 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822444912935053 responded with 429. Retrying in 0.60 seconds.
+2025-10-21 16:02:48,755 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822444204101792 responded with 429. Retrying in 0.50 seconds.
+2025-10-21 16:02:49,735 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822319884939304 responded with 429. Retrying in 0.52 seconds.
+2025-10-21 16:02:50,806 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822319046074428 responded with 429. Retrying in 0.47 seconds.
+2025-10-21 16:02:51,767 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822240344146022 responded with 429. Retrying in 0.50 seconds.
+2025-10-21 16:02:52,720 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108822225974472794 responded with 429. Retrying in 0.54 seconds.
+2025-10-21 16:02:53,923 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820946317475891 responded with 429. Retrying in 0.34 seconds.
+2025-10-21 16:02:54,692 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820936553136261 responded with 429. Retrying in 0.57 seconds.
+2025-10-21 16:02:55,705 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820727181869197 responded with 429. Retrying in 0.55 seconds.
+2025-10-21 16:02:56,787 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820686648131676 responded with 429. Retrying in 0.47 seconds.
+2025-10-21 16:02:57,668 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820647313948866 responded with 429. Retrying in 0.59 seconds.
+2025-10-21 16:02:58,757 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820568398106726 responded with 429. Retrying in 0.51 seconds.
+2025-10-21 16:03:00,006 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820566745555056 responded with 429. Retrying in 0.30 seconds.
+2025-10-21 16:03:00,743 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820548034756698 responded with 429. Retrying in 0.52 seconds.
+2025-10-21 16:03:01,753 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820546696773632 responded with 429. Retrying in 0.51 seconds.
+2025-10-21 16:03:02,845 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820545350418503 responded with 429. Retrying in 0.43 seconds.
+2025-10-21 16:03:03,785 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820543572033687 responded with 429. Retrying in 0.48 seconds.
+2025-10-21 16:03:04,731 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820542263398453 responded with 429. Retrying in 0.53 seconds.
+2025-10-21 16:03:05,703 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820540715716668 responded with 429. Retrying in 0.56 seconds.
+2025-10-21 16:03:06,729 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820520851492945 responded with 429. Retrying in 0.54 seconds.
+2025-10-21 16:03:07,718 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820519593201754 responded with 429. Retrying in 0.55 seconds.
+2025-10-21 16:03:08,700 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820517730922496 responded with 429. Retrying in 0.56 seconds.
+2025-10-21 16:03:09,940 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820516334223390 responded with 429. Retrying in 0.33 seconds.
+2025-10-21 16:03:10,766 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1108782904806490203/messages/1108820514996240524 responded with 429. Retrying in 0.51 seconds.
+2025-10-21 16:03:13,052 - ERROR - Ignoring exception in command 'clear'
+Traceback (most recent call last):
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1295, in clear
+    await interaction.response.send_message(f"💬 Apagando {delete_count} mensagens...")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1302, in clear
+    await interaction.response.send_message(f"❌ Ocorreu um erro ao tentar apagar as mensagens: {e}")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'clear' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-10-21 16:05:37,368 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 16:05:37,371 - INFO - logging in using static token
+2025-10-21 16:05:38,440 - INFO - Shard ID None has connected to Gateway (Session ID: afa90fc6912eced433081855b143a014).
+2025-10-21 16:08:21,359 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 16:08:21,362 - INFO - logging in using static token
+2025-10-21 16:08:22,359 - INFO - Shard ID None has connected to Gateway (Session ID: 23a7aa21b6817cb0b855267b68f6ec72).
+2025-10-21 16:13:55,423 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 16:13:55,427 - INFO - logging in using static token
+2025-10-21 16:13:56,622 - INFO - Shard ID None has connected to Gateway (Session ID: 04b992ff46a2fd830238c3bf3753f4a2).
+2025-10-21 16:16:09,223 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 16:16:09,228 - INFO - logging in using static token
+2025-10-21 16:16:10,256 - INFO - Shard ID None has connected to Gateway (Session ID: 793563632e2bf3d067f124522a4e9b66).
+2025-10-21 16:17:49,038 - ERROR - Ignoring exception in command 'help'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1012, in help_command
+    color=BOT_COLOR
+          ^^^^^^^^^
+NameError: name 'BOT_COLOR' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'help' raised an exception: NameError: name 'BOT_COLOR' is not defined
+2025-10-21 16:19:12,889 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 16:19:12,894 - INFO - logging in using static token
+2025-10-21 16:19:13,986 - INFO - Shard ID None has connected to Gateway (Session ID: bcde26d982140abd91617ee992c70ce1).
+2025-10-21 16:24:02,019 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 16:24:02,022 - INFO - logging in using static token
+2025-10-21 16:24:03,568 - INFO - Shard ID None has connected to Gateway (Session ID: 8c789f8e2d54e153e67ed76b8d13894b).
+2025-10-21 16:25:10,902 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 16:25:10,906 - INFO - logging in using static token
+2025-10-21 16:25:12,001 - INFO - Shard ID None has connected to Gateway (Session ID: 40b443698739e0904d78bc22c35baa2f).
+2025-10-21 17:43:32,026 - INFO - Shard ID None has successfully RESUMED session 40b443698739e0904d78bc22c35baa2f.
+2025-10-21 18:06:56,931 - INFO - Shard ID None has successfully RESUMED session 40b443698739e0904d78bc22c35baa2f.
+2025-10-21 20:42:21,230 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 20:42:21,234 - INFO - logging in using static token
+2025-10-21 20:42:23,728 - INFO - Shard ID None has connected to Gateway (Session ID: fda650bec4c09e6321c15c669b833ed8).
+2025-10-21 20:45:19,433 - ERROR - Ignoring exception in view <ActionButtons timeout=180 children=3> for item <Button style=<ButtonStyle.danger: 4> url=None disabled=False label='⚔️ Atacar' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 663, in atacar
+    await self.enemy_turn(interaction)
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 700, in enemy_turn
+    await self.on_defeat(interaction)
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 737, in on_defeat
+    await interaction.followup.send("🕯️ Fim do encontro.", view=None)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 1817, in send
+    raise TypeError(f'expected view parameter to be of type View not {view.__class__.__name__}')
+TypeError: expected view parameter to be of type View not NoneType
+2025-10-21 20:52:32,518 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1118237053776318464/messages/1367329068009263177 responded with 429. Retrying in 0.49 seconds.
+2025-10-21 20:52:33,507 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1118237053776318464/messages/1367329054289821798 responded with 429. Retrying in 0.49 seconds.
+2025-10-21 20:52:34,440 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1118237053776318464/messages/1367329052012318905 responded with 429. Retrying in 0.56 seconds.
+2025-10-21 20:52:35,449 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1118237053776318464/messages/1181028253436223690 responded with 429. Retrying in 0.55 seconds.
+2025-10-21 20:52:36,467 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1118237053776318464/messages/1181027346975817848 responded with 429. Retrying in 0.53 seconds.
+2025-10-21 20:52:37,514 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1118237053776318464/messages/1181026467937779732 responded with 429. Retrying in 0.50 seconds.
+2025-10-21 20:52:38,546 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1118237053776318464/messages/1181025381545947156 responded with 429. Retrying in 0.45 seconds.
+2025-10-21 20:52:39,601 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1118237053776318464/messages/1181024250870628472 responded with 429. Retrying in 0.42 seconds.
+2025-10-21 20:52:40,474 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/1118237053776318464/messages/1181023356401758232 responded with 429. Retrying in 0.53 seconds.
+2025-10-21 20:52:42,786 - ERROR - Ignoring exception in command 'clear'
+Traceback (most recent call last):
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1322, in clear
+    await interaction.response.send_message(f"💬 Apagando {delete_count} mensagens...")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1329, in clear
+    await interaction.response.send_message(f"❌ Ocorreu um erro ao tentar apagar as mensagens: {e}")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'clear' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-10-21 20:59:30,434 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 20:59:30,439 - INFO - logging in using static token
+2025-10-21 20:59:32,250 - INFO - Shard ID None has connected to Gateway (Session ID: cd517493a6301a7b9ab6a339c0ce1264).
+2025-10-21 21:03:21,383 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 21:03:21,399 - INFO - logging in using static token
+2025-10-21 21:03:23,267 - INFO - Shard ID None has connected to Gateway (Session ID: 891e29ce0fede09bbbe8adf6db5199c9).
+2025-10-21 21:07:40,951 - ERROR - Ignoring exception in command 'clear'
+Traceback (most recent call last):
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1448, in clear
+    await interaction.response.send_message(f"💬 Apagando {delete_count} mensagens...")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1455, in clear
+    await interaction.response.send_message(f"❌ Ocorreu um erro ao tentar apagar as mensagens: {e}")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'clear' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-10-21 21:08:03,933 - ERROR - Ignoring exception in command 'clear'
+Traceback (most recent call last):
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1448, in clear
+    await interaction.response.send_message(f"💬 Apagando {delete_count} mensagens...")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1455, in clear
+    await interaction.response.send_message(f"❌ Ocorreu um erro ao tentar apagar as mensagens: {e}")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'clear' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-10-21 21:09:32,282 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 21:09:32,285 - INFO - logging in using static token
+2025-10-21 21:09:33,318 - INFO - Shard ID None has connected to Gateway (Session ID: ec8e6d347ecd0ba65d51ff4c2c25f8c7).
+2025-10-21 21:09:51,033 - ERROR - Ignoring exception in command 'clear'
+Traceback (most recent call last):
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1448, in clear
+    await interaction.response.send_message(f"💬 Apagando {delete_count} mensagens...")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1455, in clear
+    await interaction.response.send_message(f"❌ Ocorreu um erro ao tentar apagar as mensagens: {e}")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'clear' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-10-21 21:12:22,146 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 21:12:22,149 - INFO - logging in using static token
+2025-10-21 21:12:23,194 - INFO - Shard ID None has connected to Gateway (Session ID: 986d714262af32a3bcaa5b1db1379457).
+2025-10-21 21:15:38,048 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 21:15:38,054 - INFO - logging in using static token
+2025-10-21 21:15:39,115 - INFO - Shard ID None has connected to Gateway (Session ID: 2615ac152aab3c75a37c1e3563f0256b).
+2025-10-21 21:16:25,478 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 21:16:25,482 - INFO - logging in using static token
+2025-10-21 21:16:26,516 - INFO - Shard ID None has connected to Gateway (Session ID: 2632518bd75c1348ced8179db0eb8507).
+2025-10-21 21:16:50,605 - ERROR - Ignoring exception in command 'clear'
+Traceback (most recent call last):
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1448, in clear
+    await interaction.response.send_message(f"💬 Apagando {delete_count} mensagens...")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1455, in clear
+    await interaction.response.send_message(f"❌ Ocorreu um erro ao tentar apagar as mensagens: {e}")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'clear' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-10-21 21:17:04,079 - ERROR - Ignoring exception in command 'clear'
+Traceback (most recent call last):
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1448, in clear
+    await interaction.response.send_message(f"💬 Apagando {delete_count} mensagens...")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1455, in clear
+    await interaction.response.send_message(f"❌ Ocorreu um erro ao tentar apagar as mensagens: {e}")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'clear' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-10-21 21:20:20,748 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 21:20:20,754 - INFO - logging in using static token
+2025-10-21 21:20:22,156 - INFO - Shard ID None has connected to Gateway (Session ID: d8c4b354a4662bd5280911e97ca3e49d).
+2025-10-21 21:27:53,382 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 21:27:53,388 - INFO - logging in using static token
+2025-10-21 21:27:54,477 - INFO - Shard ID None has connected to Gateway (Session ID: 00457e05d5deaee23a5cdc234e5d63cd).
+2025-10-21 21:30:14,711 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 21:30:14,718 - INFO - logging in using static token
+2025-10-21 21:30:15,928 - INFO - Shard ID None has connected to Gateway (Session ID: b92dd10ed97c60d0153ca429b32012c8).
+2025-10-21 21:32:21,183 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 21:32:21,188 - INFO - logging in using static token
+2025-10-21 21:32:22,517 - INFO - Shard ID None has connected to Gateway (Session ID: 3359c53c065b134b603ce7f92739a27f).
+2025-10-21 21:35:05,266 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-10-21 21:35:05,272 - INFO - logging in using static token
+2025-10-21 21:35:06,375 - INFO - Shard ID None has connected to Gateway (Session ID: c47c66a9156e77ab8f8c9927e31f2063).
+2025-10-21 21:41:56,955 - INFO - logging in using static token
+2025-10-21 21:41:58,016 - INFO - Shard ID None has connected to Gateway (Session ID: eca9658897fcba2f34cafda55f202dc3).
+2025-10-22 16:05:00,375 - INFO - logging in using static token
+2025-10-22 16:05:03,209 - INFO - Shard ID None has connected to Gateway (Session ID: e15161a35f8751c7c33c13445af45c4e).
+2025-10-22 16:23:47,354 - INFO - Shard ID None has successfully RESUMED session e15161a35f8751c7c33c13445af45c4e.
+2025-10-22 16:25:39,165 - INFO - Shard ID None has successfully RESUMED session e15161a35f8751c7c33c13445af45c4e.
+2025-11-20 18:31:14,947 - INFO - logging in using static token
+2025-11-20 18:31:16,354 - INFO - Shard ID None has connected to Gateway (Session ID: a10a3c94f9ff73ce1972929d40af964f).
+2025-11-20 19:08:00,525 - INFO - Shard ID None has successfully RESUMED session a10a3c94f9ff73ce1972929d40af964f.
+2025-11-20 19:50:41,099 - INFO - Shard ID None has successfully RESUMED session a10a3c94f9ff73ce1972929d40af964f.
+2025-11-20 20:36:33,068 - INFO - logging in using static token
+2025-11-20 20:36:34,234 - INFO - Shard ID None has connected to Gateway (Session ID: 538b4800504c2988fdf7eb06d542bbc7).
+2025-11-20 20:38:23,926 - ERROR - Ignoring exception in command 'clear'
+Traceback (most recent call last):
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1453, in clear
+    await interaction.response.send_message(f"💬 Apagando {delete_count} mensagens...")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\OneDrive\Documentos\Epic Roll\Epic Roll.py", line 1460, in clear
+    await interaction.response.send_message(f"❌ Ocorreu um erro ao tentar apagar as mensagens: {e}")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'clear' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-11-20 21:10:49,725 - INFO - logging in using static token
+2025-11-20 21:10:50,972 - INFO - Shard ID None has connected to Gateway (Session ID: f74382835a7603652793b6ccc99faa75).
+2025-11-20 21:26:51,695 - WARNING - Can't keep up, shard ID None websocket is 12.1s behind.
+2025-11-20 21:26:51,709 - WARNING - Can't keep up, shard ID None websocket is 12.1s behind.
+2025-11-20 21:30:52,986 - INFO - Shard ID None has successfully RESUMED session f74382835a7603652793b6ccc99faa75.
+2025-11-20 21:41:39,969 - INFO - Shard ID None has successfully RESUMED session f74382835a7603652793b6ccc99faa75.
+2025-11-21 01:04:39,129 - INFO - Shard ID None has successfully RESUMED session f74382835a7603652793b6ccc99faa75.
+2025-11-21 01:30:45,743 - INFO - Shard ID None has successfully RESUMED session f74382835a7603652793b6ccc99faa75.
+2025-11-21 02:19:45,637 - INFO - Shard ID None has successfully RESUMED session f74382835a7603652793b6ccc99faa75.
+2025-11-21 03:09:16,672 - INFO - Shard ID None has successfully RESUMED session f74382835a7603652793b6ccc99faa75.
+2025-11-22 18:25:34,257 - INFO - logging in using static token
+2025-11-22 18:25:35,788 - INFO - Shard ID None has connected to Gateway (Session ID: 29ddafe9988d53c34129596d278b8b9c).
+2025-11-22 21:00:30,920 - WARNING - Can't keep up, shard ID None websocket is 12.3s behind.
+2025-11-22 21:00:30,940 - WARNING - Can't keep up, shard ID None websocket is 12.3s behind.
+2025-11-25 17:06:26,086 - INFO - logging in using static token
+2025-11-25 17:06:27,993 - INFO - Shard ID None has connected to Gateway (Session ID: 534f536bbd1094330606a542c55c52b1).
+2025-11-25 18:13:22,390 - INFO - Shard ID None has successfully RESUMED session 534f536bbd1094330606a542c55c52b1.
+2025-11-25 18:21:51,649 - INFO - Shard ID None has successfully RESUMED session 534f536bbd1094330606a542c55c52b1.
+2025-11-25 19:48:09,214 - INFO - logging in using static token
+2025-11-25 19:48:10,317 - INFO - Shard ID None has connected to Gateway (Session ID: b3b0435ff2677575731c34ba9beab6c9).
+2025-11-25 19:51:25,967 - INFO - logging in using static token
+2025-11-25 19:51:26,996 - INFO - Shard ID None has connected to Gateway (Session ID: 12b742622ee08f26758173af1159ffc4).
+2025-11-25 19:52:08,967 - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "fihca" is not found
+2025-11-25 19:52:13,074 - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "ficha" is not found
+2025-11-25 19:56:35,022 - INFO - logging in using static token
+2025-11-25 19:56:36,070 - INFO - Shard ID None has connected to Gateway (Session ID: 2fecff56154e4d508e084ce36cb0e643).
+2025-11-25 20:02:40,023 - INFO - logging in using static token
+2025-11-25 20:02:41,320 - INFO - Shard ID None has connected to Gateway (Session ID: 08009c5888bc7b4c6eaef87cf11a2430).
+2025-11-25 20:03:26,890 - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "ficha" is not found
+2025-11-25 20:08:34,989 - INFO - logging in using static token
+2025-11-25 20:08:37,594 - INFO - Shard ID None has connected to Gateway (Session ID: d754a89f6cad236c6ef37d3dda0fc720).
+2025-11-25 20:10:17,061 - ERROR - Ignoring exception in view <ResetConfirmationView timeout=60 children=2> for item <Button style=<ButtonStyle.danger: 4> url=None disabled=False label='Sim, Resetar' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 1148, in confirm_button
+    if interaction.user.id != self.original_interaction.user.id:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'Button' object has no attribute 'user'
+2025-11-25 20:19:37,431 - INFO - logging in using static token
+2025-11-25 20:19:38,524 - INFO - Shard ID None has connected to Gateway (Session ID: 8d8b7a78e5108f149ec5ce3fc647e4f9).
+2025-11-25 20:23:43,395 - INFO - logging in using static token
+2025-11-25 20:23:44,397 - INFO - Shard ID None has connected to Gateway (Session ID: 271a0e03b6110eb700a5100e31e2d5b9).
+2025-11-25 20:27:15,334 - INFO - logging in using static token
+2025-11-25 20:27:16,416 - INFO - Shard ID None has connected to Gateway (Session ID: 58410f28f992b5fd38a61efa03b441cd).
+2025-11-25 20:27:25,577 - ERROR - ERRO DE API/CONEXÃO na geração JSON: GenerativeModel.generate_content_async() got an unexpected keyword argument 'config'
+2025-11-25 20:29:21,975 - INFO - logging in using static token
+2025-11-25 20:29:23,359 - INFO - Shard ID None has connected to Gateway (Session ID: 87453a830bad22369850ec5d31a3851f).
+2025-11-25 20:30:16,825 - ERROR - Ignoring exception in view <GameMenuView timeout=3600 children=3> for item <Button style=<ButtonStyle.danger: 4> url=None disabled=False label='⚔️ Aventura (Combate/Evento)' emoji=None row=0 sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 548, in start_new_adventure
+    await start_adventure(interaction, self.player)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 368, in start_adventure
+    await interaction.response.defer()
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\interactions.py", line 822, in defer
+    raise InteractionResponded(self._parent)
+discord.errors.InteractionResponded: This interaction has already been responded to before
+2025-11-25 20:44:11,107 - INFO - logging in using static token
+2025-11-25 20:44:13,568 - INFO - Shard ID None has connected to Gateway (Session ID: 493e782ee549ee6c1bdc4a2ef2d06ebd).
+2025-11-25 20:45:11,187 - ERROR - Ignoring exception in view <GameMenuView timeout=3600 children=3> for item <Button style=<ButtonStyle.danger: 4> url=None disabled=False label='⚔️ Aventura (Combate/Evento)' emoji=None row=0 sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 735, in start_new_adventure
+    await start_adventure(interaction, self.player)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 559, in start_adventure
+    await interaction.followup.send(
+    ...<2 lines>...
+    )
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 1875, in send
+    if view is not MISSING and not view.is_finished():
+                                   ~~~~~~~~~~~~~~~~^^
+TypeError: 'bool' object is not callable
+2025-11-25 20:49:35,990 - INFO - logging in using static token
+2025-11-25 20:49:37,372 - INFO - Shard ID None has connected to Gateway (Session ID: 8ae657cbf0742d25c4d5c9dc206faa2c).
+2025-11-25 20:51:04,866 - ERROR - Ignoring exception in view <CombatView timeout=180 children=2> for item <Button style=<ButtonStyle.danger: 4> url=None disabled=False label='⚔️ Atacar' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 224, in attack_button
+    await self.update_message(
+          ~~~~~~~~~~~~~~~~~~~^
+        interaction,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        view=None
+        ^^^^^^^^^
+    )
+    ^
+TypeError: CombatView.update_message() got an unexpected keyword argument 'content'
+2025-11-25 20:53:34,505 - INFO - logging in using static token
+2025-11-25 20:53:36,167 - INFO - Shard ID None has connected to Gateway (Session ID: a552cac65046f9dab8caa0d3689f31b3).
+2025-11-25 20:54:26,621 - ERROR - Ignoring exception in command 'chat'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 1403, in chat_command
+    await interaction.followup.send(f"**🧠 Resposta do Gemini:**\n{resposta_ai}")
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 1857, in send
+    data = await adapter.execute_webhook(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 226, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'chat' raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+2025-11-25 21:00:49,707 - INFO - logging in using static token
+2025-11-25 21:00:50,783 - INFO - Shard ID None has connected to Gateway (Session ID: f899d86f6be53bc1db2f1bcb00528e31).
+2025-11-25 21:05:33,701 - INFO - logging in using static token
+2025-11-25 21:05:34,893 - INFO - Shard ID None has connected to Gateway (Session ID: e1c8574a7a710a10070b569bbfa07a5f).
+2025-11-25 21:10:09,801 - INFO - logging in using static token
+2025-11-25 21:10:10,998 - INFO - Shard ID None has connected to Gateway (Session ID: b23b21a17f4e99ec0ff04c4dfbc08ed3).
+2025-11-26 18:22:54,223 - INFO - logging in using static token
+2025-11-26 18:22:55,418 - INFO - Shard ID None has connected to Gateway (Session ID: f906cb839c464d46d22709061c3e3999).
+2025-11-26 20:41:59,521 - INFO - Shard ID None has successfully RESUMED session f906cb839c464d46d22709061c3e3999.
+2025-12-01 19:45:00,182 - INFO - logging in using static token
+2025-12-01 19:45:02,094 - INFO - Shard ID None has connected to Gateway (Session ID: 9b983d5208e71225a9e94f78cdbd302d).
+2025-12-01 23:22:20,771 - INFO - Shard ID None has successfully RESUMED session 9b983d5208e71225a9e94f78cdbd302d.
+2025-12-02 01:58:02,912 - INFO - Shard ID None has successfully RESUMED session 9b983d5208e71225a9e94f78cdbd302d.
+2025-12-02 02:24:52,200 - INFO - Shard ID None has successfully RESUMED session 9b983d5208e71225a9e94f78cdbd302d.
+2025-12-02 02:46:45,627 - INFO - Shard ID None has successfully RESUMED session 9b983d5208e71225a9e94f78cdbd302d.
+2025-12-02 05:48:02,375 - INFO - Shard ID None has successfully RESUMED session 9b983d5208e71225a9e94f78cdbd302d.
+2025-12-14 15:59:58,707 - INFO - logging in using static token
+2025-12-14 15:59:59,812 - INFO - Shard ID None has connected to Gateway (Session ID: 9991fd07f2fa60590c623292988137b6).
+2025-12-14 16:43:43,267 - INFO - Shard ID None has successfully RESUMED session 9991fd07f2fa60590c623292988137b6.
+2025-12-14 18:38:49,470 - INFO - Shard ID None has successfully RESUMED session 9991fd07f2fa60590c623292988137b6.
+2025-12-14 20:40:22,999 - INFO - Shard ID None has successfully RESUMED session 9991fd07f2fa60590c623292988137b6.
+2025-12-14 23:22:41,995 - INFO - Shard ID None has successfully RESUMED session 9991fd07f2fa60590c623292988137b6.
+2025-12-15 00:59:45,933 - INFO - logging in using static token
+2025-12-15 00:59:47,670 - INFO - Shard ID None has connected to Gateway (Session ID: e8de37837f03e8f9c680eafcd4af8af5).
+2025-12-15 01:22:44,318 - INFO - Shard ID None has successfully RESUMED session e8de37837f03e8f9c680eafcd4af8af5.
+2025-12-15 02:09:28,365 - INFO - Shard ID None has successfully RESUMED session e8de37837f03e8f9c680eafcd4af8af5.
+2025-12-15 02:26:11,092 - INFO - Shard ID None has successfully RESUMED session e8de37837f03e8f9c680eafcd4af8af5.
+2025-12-15 03:02:41,785 - INFO - Shard ID None has successfully RESUMED session e8de37837f03e8f9c680eafcd4af8af5.
+2025-12-15 04:00:26,010 - ERROR - Attempting a reconnect in 1.22s
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohttp\connector.py", line 1115, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohappyeyeballs\impl.py", line 122, in start_connection
+    raise first_exception
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohappyeyeballs\impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohappyeyeballs\impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\asyncio\proactor_events.py", line 726, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\asyncio\windows_events.py", line 804, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\asyncio\windows_events.py", line 600, in finish_connect
+    ov.getresult()
+    ~~~~~~~~~~~~^^
+OSError: [WinError 121] O tempo limite do semáforo expirou
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\asyncio\tasks.py", line 494, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohttp\connector.py", line 1406, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohttp\connector.py", line 1375, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\aiohttp\connector.py", line 1130, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [O tempo limite do semáforo expirou]
+2025-12-15 04:00:27,959 - INFO - Shard ID None has successfully RESUMED session e8de37837f03e8f9c680eafcd4af8af5.
+2025-12-15 04:21:58,874 - INFO - Shard ID None has successfully RESUMED session e8de37837f03e8f9c680eafcd4af8af5.
+2025-12-15 04:55:03,767 - INFO - Shard ID None has successfully RESUMED session e8de37837f03e8f9c680eafcd4af8af5.
+2025-12-17 02:08:40,028 - INFO - logging in using static token
+2025-12-17 02:08:41,325 - INFO - Shard ID None has connected to Gateway (Session ID: 7768815c951e1468c5084704b44656c6).
+2025-12-17 02:15:29,582 - ERROR - Ignoring exception in view <CombatView timeout=180 children=2> for item <Button style=<ButtonStyle.danger: 4> url=None disabled=False label='⚔️ Atacar' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 226, in attack_button
+    await self.update_message(
+          ~~~~~~~~~~~~~~~~~~~^
+        interaction,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        view=None
+        ^^^^^^^^^
+    )
+    ^
+TypeError: CombatView.update_message() got an unexpected keyword argument 'new_text'
+2025-12-17 02:19:25,524 - INFO - logging in using static token
+2025-12-17 02:19:26,669 - INFO - Shard ID None has connected to Gateway (Session ID: afb658ca3bdedd94bd36a832c65373a9).
+2025-12-17 02:21:31,919 - ERROR - Ignoring exception in view <CombatView timeout=180 children=2> for item <Button style=<ButtonStyle.danger: 4> url=None disabled=False label='⚔️ Atacar' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 226, in attack_button
+    await self.update_message(
+          ~~~~~~~~~~~~~~~~~~~^
+        interaction,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        view=None
+        ^^^^^^^^^
+    )
+    ^
+TypeError: CombatView.update_message() got an unexpected keyword argument 'new_text'
+2025-12-17 02:25:08,296 - INFO - Shard ID None has successfully RESUMED session afb658ca3bdedd94bd36a832c65373a9.
+2025-12-17 02:27:02,531 - ERROR - Ignoring exception in view <GameMenuView timeout=3600 children=3> for item <Button style=<ButtonStyle.danger: 4> url=None disabled=False label='⚔️ Aventura (Combate/Evento)' emoji=None row=0 sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 744, in start_new_adventure
+    await start_adventure(interaction, self.player)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\Epic Roll.py", line 603, in start_adventure
+    await interaction.followup.send(
+    ...<2 lines>...
+    )
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 1857, in send
+    data = await adapter.execute_webhook(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\webhook\async_.py", line 226, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In components.0.components.1.label: Must be 80 or fewer in length.
+2025-12-17 03:16:05,792 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383515026429579275 responded with 429. Retrying in 0.30 seconds.
+2025-12-17 03:16:06,559 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383514220729073664 responded with 429. Retrying in 0.48 seconds.
+2025-12-17 03:16:07,462 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383513456111779870 responded with 429. Retrying in 0.57 seconds.
+2025-12-17 03:16:08,423 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383512788307148961 responded with 429. Retrying in 0.61 seconds.
+2025-12-17 03:16:09,705 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383511852046352434 responded with 429. Retrying in 0.33 seconds.
+2025-12-17 03:16:10,432 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383511100372287520 responded with 429. Retrying in 0.60 seconds.
+2025-12-17 03:16:11,531 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383510375391301743 responded with 429. Retrying in 0.51 seconds.
+2025-12-17 03:16:12,585 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383509585935204452 responded with 429. Retrying in 0.45 seconds.
+2025-12-17 03:16:13,447 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383508926510792798 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:16:14,569 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383508173230706850 responded with 429. Retrying in 0.47 seconds.
+2025-12-17 03:16:15,539 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383507608484184094 responded with 429. Retrying in 0.50 seconds.
+2025-12-17 03:16:16,474 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383506859436277791 responded with 429. Retrying in 0.56 seconds.
+2025-12-17 03:16:17,512 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383506193938645163 responded with 429. Retrying in 0.54 seconds.
+2025-12-17 03:16:18,521 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383505594153173072 responded with 429. Retrying in 0.53 seconds.
+2025-12-17 03:16:19,521 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383504875073179728 responded with 429. Retrying in 0.53 seconds.
+2025-12-17 03:16:20,579 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383504069011968001 responded with 429. Retrying in 0.46 seconds.
+2025-12-17 03:16:21,545 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383503450679152710 responded with 429. Retrying in 0.49 seconds.
+2025-12-17 03:16:22,429 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383502746346590323 responded with 429. Retrying in 0.61 seconds.
+2025-12-17 03:16:23,636 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383502115221274708 responded with 429. Retrying in 0.40 seconds.
+2025-12-17 03:16:24,521 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383501538709733396 responded with 429. Retrying in 0.52 seconds.
+2025-12-17 03:16:25,506 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383500860293648457 responded with 429. Retrying in 0.54 seconds.
+2025-12-17 03:16:26,608 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383500176030826627 responded with 429. Retrying in 0.43 seconds.
+2025-12-17 03:16:27,656 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383499420678750478 responded with 429. Retrying in 0.38 seconds.
+2025-12-17 03:16:28,633 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383499419495956480 responded with 429. Retrying in 0.41 seconds.
+2025-12-17 03:16:29,606 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383499416438313080 responded with 429. Retrying in 0.44 seconds.
+2025-12-17 03:16:30,517 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383499312344072272 responded with 429. Retrying in 0.52 seconds.
+2025-12-17 03:16:31,516 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383499311303753961 responded with 429. Retrying in 0.54 seconds.
+2025-12-17 03:16:32,477 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383499205448040588 responded with 429. Retrying in 0.56 seconds.
+2025-12-17 03:16:33,459 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383498989625671800 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:16:34,568 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383498760902148238 responded with 429. Retrying in 0.47 seconds.
+2025-12-17 03:16:35,458 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383498514671079467 responded with 429. Retrying in 0.58 seconds.
+2025-12-17 03:16:36,494 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383494120273874954 responded with 429. Retrying in 0.55 seconds.
+2025-12-17 03:16:37,446 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1383493957186490368 responded with 429. Retrying in 0.60 seconds.
+2025-12-17 03:18:38,356 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178757047062610 responded with 429. Retrying in 0.36 seconds.
+2025-12-17 03:18:39,194 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178755524661279 responded with 429. Retrying in 0.51 seconds.
+2025-12-17 03:18:40,299 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178745584156732 responded with 429. Retrying in 0.40 seconds.
+2025-12-17 03:18:41,128 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178737107341383 responded with 429. Retrying in 0.57 seconds.
+2025-12-17 03:18:42,104 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178726739152908 responded with 429. Retrying in 0.60 seconds.
+2025-12-17 03:18:43,210 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178699648008261 responded with 429. Retrying in 0.49 seconds.
+2025-12-17 03:18:44,129 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178698389979176 responded with 429. Retrying in 0.58 seconds.
+2025-12-17 03:18:45,121 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178517753888969 responded with 429. Retrying in 0.58 seconds.
+2025-12-17 03:18:46,166 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178516558512209 responded with 429. Retrying in 0.55 seconds.
+2025-12-17 03:18:47,355 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178419523158078 responded with 429. Retrying in 0.36 seconds.
+2025-12-17 03:18:48,121 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367178403308109865 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:18:49,263 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012886219591690 responded with 429. Retrying in 0.44 seconds.
+2025-12-17 03:18:50,115 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012884756041768 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:18:51,115 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012883053023293 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:18:52,129 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012868532342825 responded with 429. Retrying in 0.58 seconds.
+2025-12-17 03:18:53,116 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012867278372936 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:18:54,116 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012857169842256 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:18:55,128 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012842653483039 responded with 429. Retrying in 0.57 seconds.
+2025-12-17 03:18:56,138 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012841466499102 responded with 429. Retrying in 0.57 seconds.
+2025-12-17 03:18:57,202 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012831618142259 responded with 429. Retrying in 0.51 seconds.
+2025-12-17 03:18:58,096 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012820608352329 responded with 429. Retrying in 0.61 seconds.
+2025-12-17 03:18:59,192 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012819177832469 responded with 429. Retrying in 0.51 seconds.
+2025-12-17 03:19:00,168 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012809371549747 responded with 429. Retrying in 0.55 seconds.
+2025-12-17 03:19:01,110 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012800005931099 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:19:02,181 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012790329671752 responded with 429. Retrying in 0.53 seconds.
+2025-12-17 03:19:03,113 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012782758952960 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:19:04,186 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367012781328568421 responded with 429. Retrying in 0.52 seconds.
+2025-12-17 03:19:05,123 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367002849728266332 responded with 429. Retrying in 0.58 seconds.
+2025-12-17 03:19:06,099 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367002780119732296 responded with 429. Retrying in 0.61 seconds.
+2025-12-17 03:19:07,111 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367002583352348772 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:19:08,212 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1367002189129711751 responded with 429. Retrying in 0.50 seconds.
+2025-12-17 03:19:09,281 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366987745641234433 responded with 429. Retrying in 0.43 seconds.
+2025-12-17 03:19:10,150 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366957635923869726 responded with 429. Retrying in 0.56 seconds.
+2025-12-17 03:19:11,124 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955771572523009 responded with 429. Retrying in 0.58 seconds.
+2025-12-17 03:19:12,176 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955655088312350 responded with 429. Retrying in 0.54 seconds.
+2025-12-17 03:19:13,174 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955475974754335 responded with 429. Retrying in 0.53 seconds.
+2025-12-17 03:19:14,235 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955366729908285 responded with 429. Retrying in 0.48 seconds.
+2025-12-17 03:19:15,152 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955365245255700 responded with 429. Retrying in 0.56 seconds.
+2025-12-17 03:19:16,125 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955362560774196 responded with 429. Retrying in 0.58 seconds.
+2025-12-17 03:19:17,152 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955352859607070 responded with 429. Retrying in 0.55 seconds.
+2025-12-17 03:19:18,164 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955332563238964 responded with 429. Retrying in 0.54 seconds.
+2025-12-17 03:19:19,171 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955331581775983 responded with 429. Retrying in 0.54 seconds.
+2025-12-17 03:19:20,256 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955321658179735 responded with 429. Retrying in 0.46 seconds.
+2025-12-17 03:19:21,150 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955300716023818 responded with 429. Retrying in 0.58 seconds.
+2025-12-17 03:19:22,193 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955298228670476 responded with 429. Retrying in 0.51 seconds.
+2025-12-17 03:19:23,132 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955288296554496 responded with 429. Retrying in 0.58 seconds.
+2025-12-17 03:19:24,141 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955256545808487 responded with 429. Retrying in 0.57 seconds.
+2025-12-17 03:19:25,095 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955254503051358 responded with 429. Retrying in 0.61 seconds.
+2025-12-17 03:19:26,115 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955244633854072 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:19:27,089 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955216829812797 responded with 429. Retrying in 0.62 seconds.
+2025-12-17 03:19:28,157 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955206214156342 responded with 429. Retrying in 0.55 seconds.
+2025-12-17 03:19:29,119 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955196617326663 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:19:30,103 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955195187200140 responded with 429. Retrying in 0.60 seconds.
+2025-12-17 03:19:31,143 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955130712358933 responded with 429. Retrying in 0.57 seconds.
+2025-12-17 03:19:32,423 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955129726697483 responded with 429. Retrying in 0.30 seconds.
+2025-12-17 03:19:33,123 - WARNING - We are being rate limited. DELETE https://discord.com/api/v10/channels/586168901776310306/messages/1366955117575667762 responded with 429. Retrying in 0.59 seconds.
+2025-12-17 03:20:43,424 - INFO - logging in using static token
+2025-12-17 03:20:44,494 - INFO - Shard ID None has connected to Gateway (Session ID: 6c37410a568a80b7f1db945c1963d032).
+2025-12-17 04:26:27,523 - INFO - Shard ID None has successfully RESUMED session 6c37410a568a80b7f1db945c1963d032.
+2025-12-20 18:55:44,692 - INFO - logging in using static token
+2025-12-20 18:55:46,498 - INFO - Shard ID None has connected to Gateway (Session ID: 2f4b1c0076097e4570e92ec87dcd55b5).
+2025-12-20 19:51:39,667 - INFO - logging in using static token
+2025-12-20 19:51:40,823 - INFO - Shard ID None has connected to Gateway (Session ID: 70bcfb415f7018a9b2aa7e3a5e12a744).
+2025-12-21 01:11:16,493 - INFO - logging in using static token
+2025-12-21 01:11:17,655 - INFO - Shard ID None has connected to Gateway (Session ID: c405a3dd94937c381d6d3c70552eecca).
+2025-12-21 01:11:21,846 - ERROR - Ignoring exception in on_ready
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\client.py", line 481, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\EpicRoll.py", line 99, in on_ready
+    data = load_all_player_data()
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'load_all_player_data' is not defined
+2025-12-21 01:16:41,963 - INFO - logging in using static token
+2025-12-21 01:16:47,207 - INFO - logging in using static token
+2025-12-21 01:16:48,212 - INFO - Shard ID None has connected to Gateway (Session ID: b8f14ceb3be3da93b55beb7a07161eb3).
+2025-12-21 01:16:50,230 - ERROR - Ignoring exception in on_ready
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\client.py", line 481, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\EpicRoll.py", line 92, in on_ready
+    data = load_all_player_data()
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'load_all_player_data' is not defined
+2025-12-21 01:19:55,644 - INFO - logging in using static token
+2025-12-21 01:23:58,790 - INFO - logging in using static token
+2025-12-21 01:24:00,287 - INFO - Shard ID None has connected to Gateway (Session ID: 489c573c94b7b45ce11a8d47d5b0efc7).
+2025-12-21 01:24:02,313 - ERROR - Ignoring exception in on_ready
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\client.py", line 481, in _run_event
+    await coro(*args, **kwargs)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\EpicRoll.py", line 92, in on_ready
+    data = load_all_player_data()
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'load_all_player_data' is not defined
+2025-12-21 01:25:51,261 - INFO - logging in using static token
+2025-12-21 01:26:00,070 - INFO - logging in using static token
+2025-12-21 01:26:01,198 - INFO - Shard ID None has connected to Gateway (Session ID: d9392a7444bcaace5ed9dd378a95684d).
+2025-12-21 01:33:59,359 - INFO - logging in using static token
+2025-12-21 01:34:18,296 - INFO - logging in using static token
+2025-12-21 01:34:19,591 - INFO - Shard ID None has connected to Gateway (Session ID: 88c252aa7c0a79792f6a2956c721827d).
+2025-12-21 01:38:01,271 - INFO - logging in using static token
+2025-12-21 01:41:22,078 - INFO - logging in using static token
+2025-12-21 01:41:23,274 - INFO - Shard ID None has connected to Gateway (Session ID: 854dcb83878b9f9990b5a36578e8af39).
+2025-12-21 01:43:13,235 - INFO - logging in using static token
+2025-12-21 01:43:14,420 - INFO - Shard ID None has connected to Gateway (Session ID: b815fd709484325e20aa91393a2bcc4c).
+2025-12-21 01:51:52,054 - INFO - logging in using static token
+2025-12-21 01:51:53,131 - INFO - Shard ID None has connected to Gateway (Session ID: f8f799cba25337d88b52580c4cf26077).
+2025-12-21 02:37:34,564 - INFO - logging in using static token
+2025-12-21 02:42:48,031 - INFO - logging in using static token
+2025-12-21 02:44:23,473 - INFO - logging in using static token
+2025-12-21 02:44:24,670 - INFO - Shard ID None has connected to Gateway (Session ID: 90a9f286fac49536fc738d7a00da3516).
+2025-12-21 02:46:41,791 - ERROR - Ignoring exception in command 'perfil'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 1253, in perfil
+    xp_prox = self.bot.xp_to_next_level(player["level"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Bot' object has no attribute 'xp_to_next_level'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'perfil' raised an exception: AttributeError: 'Bot' object has no attribute 'xp_to_next_level'
+2025-12-21 02:59:53,021 - INFO - logging in using static token
+2025-12-21 02:59:54,148 - INFO - Shard ID None has connected to Gateway (Session ID: 23dc7af0d73debc5c21019af2264e615).
+2025-12-21 03:00:07,445 - ERROR - Ignoring exception in command 'perfil'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 1246, in perfil
+    player = self.player_sessions.get(interaction.user.id)
+             ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'RPGMecanicas' object has no attribute 'player_sessions'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'perfil' raised an exception: AttributeError: 'RPGMecanicas' object has no attribute 'player_sessions'
+2025-12-21 03:01:21,543 - INFO - logging in using static token
+2025-12-21 03:01:22,550 - INFO - Shard ID None has connected to Gateway (Session ID: 56786f4229af5104260124957e94ef3c).
+2025-12-21 03:01:44,267 - INFO - logging in using static token
+2025-12-21 03:01:45,439 - INFO - Shard ID None has connected to Gateway (Session ID: ef2692358b74b1f638e24942c52a7c85).
+2025-12-21 03:02:03,231 - ERROR - Ignoring exception in command 'perfil'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 1246, in perfil
+    player = self.bot.player_sessions.get(interaction.user.id)
+             ^^^^^^^^
+AttributeError: 'RPGMecanicas' object has no attribute 'bot'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'perfil' raised an exception: AttributeError: 'RPGMecanicas' object has no attribute 'bot'
+2025-12-21 03:02:11,076 - ERROR - Ignoring exception in command 'aventura'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 1029, in aventura
+    player = self.player_sessions.get(interaction.user.id)
+             ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'RPGMecanicas' object has no attribute 'player_sessions'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'aventura' raised an exception: AttributeError: 'RPGMecanicas' object has no attribute 'player_sessions'
+2025-12-21 03:02:23,013 - ERROR - Ignoring exception in command 'descansar'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 1151, in descansar
+    player = self.player_sessions.get(interaction.user.id)
+             ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'RPGMecanicas' object has no attribute 'player_sessions'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'descansar' raised an exception: AttributeError: 'RPGMecanicas' object has no attribute 'player_sessions'
+2025-12-21 03:02:31,707 - ERROR - Ignoring exception in command 'perfil'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 1246, in perfil
+    player = self.bot.player_sessions.get(interaction.user.id)
+             ^^^^^^^^
+AttributeError: 'RPGMecanicas' object has no attribute 'bot'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'perfil' raised an exception: AttributeError: 'RPGMecanicas' object has no attribute 'bot'
+2025-12-21 03:12:44,974 - INFO - logging in using static token
+2025-12-21 03:12:46,225 - INFO - Shard ID None has connected to Gateway (Session ID: 9ed508c6e5f87d1cc528f87ed25f6ece).
+2025-12-21 03:12:57,733 - ERROR - Ignoring exception in command 'perfil'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 1298, in perfil
+    view = PerfilNavView(player, interaction, self)
+TypeError: PerfilNavView.__init__() takes 3 positional arguments but 4 were given
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 872, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'perfil' raised an exception: TypeError: PerfilNavView.__init__() takes 3 positional arguments but 4 were given
+2025-12-21 03:33:16,365 - INFO - logging in using static token
+2025-12-21 03:33:18,023 - INFO - Shard ID None has connected to Gateway (Session ID: 6411ded4531339517704f42b9d8f38f2).
+2025-12-21 03:33:32,635 - ERROR - Ignoring exception in view <PerfilNavView timeout=60 children=2> for item <Button style=<ButtonStyle.success: 3> url=None disabled=False label='🏪 Ir para Loja' emoji=<PartialEmoji animated=False name='💰' id=None> row=None sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 790, in abrir_loja
+    lista_loja = "\n".join([f"**{v['nome']}** - 💰 `{v['preco']}`" for k, v in self.cog.loja_itens.items()])
+                                                                               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'RPGMecanicas' object has no attribute 'loja_itens'
+2025-12-21 03:37:57,246 - INFO - logging in using static token
+2025-12-21 03:37:58,688 - INFO - Shard ID None has connected to Gateway (Session ID: 98e54f01cf91e19cc067de72b3925a09).
+2025-12-21 03:38:08,662 - ERROR - Ignoring exception in command 'loja'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 1386, in loja
+    player = self.player_sessions.get(interaction.user.id)
+             ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'RPGMecanicas' object has no attribute 'player_sessions'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'loja' raised an exception: AttributeError: 'RPGMecanicas' object has no attribute 'player_sessions'
+2025-12-21 03:45:20,098 - INFO - logging in using static token
+2025-12-21 03:45:22,004 - INFO - Shard ID None has connected to Gateway (Session ID: f9b3c6eab171d418cdd978ad5bcd9937).
+2025-12-21 03:58:44,195 - INFO - logging in using static token
+2025-12-21 03:58:45,239 - INFO - Shard ID None has connected to Gateway (Session ID: ec9b1ec1156004f8e1ba706332263dcb).
+2025-12-21 14:52:20,598 - INFO - logging in using static token
+2025-12-21 14:52:21,742 - INFO - Shard ID None has connected to Gateway (Session ID: 73d3598d777d3cc6573a00e7a33752d0).
+2025-12-21 18:33:44,983 - INFO - logging in using static token
+2025-12-21 18:33:46,149 - INFO - Shard ID None has connected to Gateway (Session ID: dd1607164b9c517ab767078f8eef3923).
+2025-12-21 18:39:39,564 - INFO - logging in using static token
+2025-12-21 18:39:40,675 - INFO - Shard ID None has connected to Gateway (Session ID: 272d71c22ef92d5398c9b44239d25b6e).
+2025-12-22 17:29:31,698 - INFO - logging in using static token
+2025-12-22 17:29:33,061 - INFO - Shard ID None has connected to Gateway (Session ID: d5f5e3a115c7c78b9ebd9d7ec18d2622).
+2025-12-22 17:32:25,076 - INFO - logging in using static token
+2025-12-22 17:32:26,198 - INFO - Shard ID None has connected to Gateway (Session ID: c8787e3fd0d41c21b91f450e4d369974).
+2025-12-22 17:37:13,441 - INFO - logging in using static token
+2025-12-22 17:37:14,559 - INFO - Shard ID None has connected to Gateway (Session ID: da7dc6e10d79a2fe6e43eab690794601).
+2025-12-22 18:01:08,477 - INFO - logging in using static token
+2025-12-22 18:01:09,716 - INFO - Shard ID None has connected to Gateway (Session ID: c198efa9ebd0b5424eb61d618c34a5e9).
+2025-12-22 18:47:32,728 - INFO - logging in using static token
+2025-12-22 18:47:34,096 - INFO - Shard ID None has connected to Gateway (Session ID: 99aa7731f3897552800c6c2ae8067208).
+2025-12-22 18:58:41,455 - INFO - logging in using static token
+2025-12-22 18:58:42,611 - INFO - Shard ID None has connected to Gateway (Session ID: 5bef63ebd8852e362980ffdd0fde6202).
+2025-12-22 18:58:58,265 - INFO - logging in using static token
+2025-12-22 18:58:59,590 - INFO - Shard ID None has connected to Gateway (Session ID: 59923a770e0c822343989cfbbad1f9f1).
+2025-12-22 18:59:42,547 - INFO - logging in using static token
+2025-12-22 18:59:43,715 - INFO - Shard ID None has connected to Gateway (Session ID: 5e1849b00a4864a28e84af895160b8fc).
+2025-12-22 19:02:23,064 - INFO - logging in using static token
+2025-12-22 19:02:24,169 - INFO - Shard ID None has connected to Gateway (Session ID: 05eb887ffcdac3bd729cd1c3f85cab0f).
+2025-12-22 19:03:38,582 - INFO - logging in using static token
+2025-12-22 19:03:39,852 - INFO - Shard ID None has connected to Gateway (Session ID: 40f27562bad1c9386be98afc14be491a).
+2025-12-22 19:05:48,735 - INFO - logging in using static token
+2025-12-22 19:05:50,638 - INFO - Shard ID None has connected to Gateway (Session ID: d5d647cd32ccd0784e70f0fb46b24a32).
+2025-12-22 19:06:29,193 - ERROR - Ignoring exception in view <LojaView timeout=60 children=1> for item <LojaSelect placeholder='Escolha algo para comprar...' min_values=1 max_values=1 disabled=False>
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 259, in callback
+    from cogs.rpg import save_player_data
+ImportError: cannot import name 'save_player_data' from 'cogs.rpg' (c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py)
+2025-12-22 19:21:15,147 - INFO - logging in using static token
+2025-12-22 19:21:16,632 - INFO - Shard ID None has connected to Gateway (Session ID: 51b48c24e105c1a6b40de5da8aa9ef43).
+2025-12-22 19:22:44,140 - INFO - logging in using static token
+2025-12-22 19:22:46,490 - INFO - Shard ID None has connected to Gateway (Session ID: a9ae0a82f4ed63c2bd30ce54fea7ce93).
+2025-12-22 19:42:10,507 - INFO - logging in using static token
+2025-12-22 19:42:11,835 - INFO - Shard ID None has connected to Gateway (Session ID: 33c2fae021092f8d1178b77258e3d7dc).
+2025-12-22 19:44:24,362 - INFO - logging in using static token
+2025-12-22 19:44:25,455 - INFO - Shard ID None has connected to Gateway (Session ID: 5b3d0af83bf34db4cf991efb43a927e0).
+2025-12-22 20:03:25,954 - INFO - logging in using static token
+2025-12-22 20:03:27,207 - INFO - Shard ID None has connected to Gateway (Session ID: 630dfa4b10230c63734911a3499af0c6).
+2025-12-22 20:08:43,011 - INFO - logging in using static token
+2025-12-22 20:08:44,190 - INFO - Shard ID None has connected to Gateway (Session ID: 9c380e7618bd7a765dda5d600d3c8f9b).
+2025-12-22 20:11:46,865 - ERROR - Ignoring exception in command 'descansar'
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\PC Gamer Mk40\Documents\Epic Roll\cogs\rpg.py", line 1516, in descansar
+    view = CampfireView(player, self)
+TypeError: CampfireView.__init__() missing 1 required positional argument: 'cog'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC Gamer Mk40\AppData\Local\Programs\Python\Python314\Lib\site-packages\discord\app_commands\commands.py", line 872, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'descansar' raised an exception: TypeError: CampfireView.__init__() missing 1 required positional argument: 'cog'
+2025-12-22 20:14:19,797 - INFO - logging in using static token
+2025-12-22 20:14:21,121 - INFO - Shard ID None has connected to Gateway (Session ID: 11aed1a79a729d31f41144971491893b).
+2025-12-22 20:17:09,387 - INFO - logging in using static token
+2025-12-22 20:17:10,410 - INFO - Shard ID None has connected to Gateway (Session ID: 825bb53ad8a8b395fffaf8199c91f616).
